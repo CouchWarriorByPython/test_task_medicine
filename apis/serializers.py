@@ -14,5 +14,5 @@ class DoctorSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Doctor
-        fields = ('url', 'full_name', 'line_of_action', 'slug', 'description', 'date_of_birth',
+        fields = ('url', 'name', 'surname', 'patronymic',  'line_of_action', 'slug', 'description', 'date_of_birth',
                   'work_experience')
