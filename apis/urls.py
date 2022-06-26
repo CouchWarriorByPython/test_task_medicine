@@ -6,8 +6,6 @@ router = routers.DefaultRouter()
 router.register(r'line-of-actions', LineOfActionSerializerViewSet)
 router.register(r'doctors', DoctorViewSet)
 
-
 urlpatterns = [
     path('', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
